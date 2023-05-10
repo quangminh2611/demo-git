@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.col {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: #ccc;
+    background-clip: content-box;
+}
+
+.item {
+    margin-top: 16px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    min-height: 180px;
+    line-height: 180px;
+    background-color: orange;
+}
+
+.main {
+    display: flex;
+    padding: 0 32px;
+}
+
+.sidebar{
+    width: 300px;
+    background-color: bisque;
+}
+
+.content{
+    flex: 1;
+}
+

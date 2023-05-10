@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer-banking-form</title>
+    <link rel="stylesheet" href="/assets/grid.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="grid wide">
+    <div class="row">
+      <div class="col l-o-2 l-8 m-12 c-12">
+        <div class="grid">
+          <form action="" method="POST" class="form" id="form-1">
+          <div class="item">
+            <h3 class="heading">Thông Tin Cá Nhân</h3>
+          <div class="input-area">
+            <div class="row">
+              <div class = "col c-12">
+            <div class="form-group">
+                <label for="customer-ID" class="form-label ">mã khách hàng</label>
+                <input class = "long-input input disabled" id="customer-ID" name="customer-ID" type="text" placeholder="" class="form-control">
+                <span class="form-message"></span>
+            </div>
+          </div>
+            </div>
+        
+            <div class="row">
+              <div class = "col c-12">
+            <div class="form-group">
+              <label for="email" class="form-label required required"> Họ và tên </label>
+              <input class = "long-input input uppercase" id="fullname" name="fullname" type="text" placeholder="VD: NGUYỄN VĂN TUẤN" class="form-control">
+              <span class="form-message"></span>
+            </div>
+          </div>
+        </div>
+            <!-- 3 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="honorifics">Danh xưng</label>
+                  <select name="honorifics" class="dropdown short-input" id="honorifics">
+                    <option value=""></option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <opti5o5n value="Ms">Ms</opti5o5n>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="sex">Giới tính</label>
+                  <select name="sex" class="dropdown short-input" id="sex">
+                    <option value=""></option>
+                    <option value="javascript">Nam</option>
+                    <option value="php">Nữ</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class = "row no-gutters">
+                <div class = "col c-6">
+              <div class="form-group">
+                <label for="DOB" class="form-label required"> Ngày sinh </label>
+                <input class = "short-input uppercase" id="DOB" name="DOB" type="date" class="form-control">
+                <span class="form-message"></span>
+              </div>
+            </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="POB">Nơi sinh</label>
+                  <select name="POB" class="dropdown short-input" id="POB">
+                    <option value="javascript"></option>
+                    <option value="php">TPHCM</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="marriage">Tình trạng hôn nhân</label>
+                  <select name="marriage" class="dropdown short-input" id="marriage">
+                    <option value=""></option>
+                    <option value="single">Đơn thân</option>
+                    <option value="married">Đã kết hôn</option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="purpose">Mục đích giao dịch với ngân hàng</label>
+                  <select name="purpose" class="dropdown short-input" id="purpose">
+                    <option value=""></option>
+                    <option value="individual">Cá nhân</option>
+                    <option value="business">Doanh nghiệp</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+             <!-- 6 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="nationality">Quốc tịch</label>
+                  <select name="nationality" class="dropdown short-input" id="nationality">
+                    <option value=""></option>
+                    <option value="vietnam">Việt Nam</option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="residency status">Tình trạng cư trú</label>
+                  <select name="residency status" class="dropdown short-input" id="residency status">
+                    <option value=""></option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="qlkh">Mã CV QLKH</label>
+                  <select name="qlkh" class="dropdown short-input" id="qlkh">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="country-of-residence">Quốc gia cư trú</label>
+                  <select name="country-of-residence" class="dropdown short-input" id="country-of-residence">
+                    <option value=""></option>
+                    <option value="vietnam">Việt Nam</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="honorifics">Chủ sở hữu hưởng lợi</label>
+                  <select name="honorifics" class="dropdown short-input" id="honorifics">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class = "col c-6">
+                <div class="form-group">
+                    <div><label for="customer-code" class="form-label required">mã khách hàng</label></div>
+                    <input class = "short-input" id="customer-code" name="customer-code" type="text" placeholder="" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+              </div>
+            </div>
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="security-question">Câu hỏi bảo mật</label>
+                  <select name="security-question" class="dropdown short-input" id="security-question">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class = "col c-6">
+                <div class="form-group">
+                    <div><label for="security-answer" class="form-label required">Câu trả lời</label></div>
+                    <input class = "short-input" id="security-answer" name="security-answer" type="text" placeholder="" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+  
+          </div>
+
+          <!-- ITEM 2  -->
+          <div class="item">
+            <h3 class="heading">Thông Tin liên lạc</h3>
+          <div class="input-area">
+            <div class="row">
+              <div class = "col c-12">
+            <div class="form-group">
+                <label for="customer-ID" class="form-label ">mã khách hàng</label>
+                <input class = "long-input input disabled" id="customer-ID" name="customer-ID" type="text" placeholder="" class="form-control">
+                <span class="form-message"></span>
+            </div>
+          </div>
+            </div>
+        
+            <div class="row">
+              <div class = "col c-12">
+            <div class="form-group">
+              <label for="email" class="form-label required required"> Họ và tên </label>
+              <input class = "long-input input uppercase" id="fullname" name="fullname" type="text" placeholder="VD: NGUYỄN VĂN TUẤN" class="form-control">
+              <span class="form-message"></span>
+            </div>
+          </div>
+        </div>
+            <!-- 3 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="honorifics">Danh xưng</label>
+                  <select name="honorifics" class="dropdown short-input" id="honorifics">
+                    <option value=""></option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <opti5o5n value="Ms">Ms</opti5o5n>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="sex">Giới tính</label>
+                  <select name="sex" class="dropdown short-input" id="sex">
+                    <option value=""></option>
+                    <option value="javascript">Nam</option>
+                    <option value="php">Nữ</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class = "row no-gutters">
+                <div class = "col c-6">
+              <div class="form-group">
+                <label for="DOB" class="form-label required"> Ngày sinh </label>
+                <input class = "short-input uppercase" id="DOB" name="DOB" type="date" class="form-control">
+                <span class="form-message"></span>
+              </div>
+            </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="POB">Nơi sinh</label>
+                  <select name="POB" class="dropdown short-input" id="POB">
+                    <option value="javascript"></option>
+                    <option value="php">TPHCM</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="marriage">Tình trạng hôn nhân</label>
+                  <select name="marriage" class="dropdown short-input" id="marriage">
+                    <option value=""></option>
+                    <option value="single">Đơn thân</option>
+                    <option value="married">Đã kết hôn</option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="purpose">Mục đích giao dịch với ngân hàng</label>
+                  <select name="purpose" class="dropdown short-input" id="purpose">
+                    <option value=""></option>
+                    <option value="individual">Cá nhân</option>
+                    <option value="business">Doanh nghiệp</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+             <!-- 6 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="nationality">Quốc tịch</label>
+                  <select name="nationality" class="dropdown short-input" id="nationality">
+                    <option value=""></option>
+                    <option value="vietnam">Việt Nam</option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="residency status">Tình trạng cư trú</label>
+                  <select name="residency status" class="dropdown short-input" id="residency status">
+                    <option value=""></option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="qlkh">Mã CV QLKH</label>
+                  <select name="qlkh" class="dropdown short-input" id="qlkh">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+                <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="country-of-residence">Quốc gia cư trú</label>
+                  <select name="country-of-residence" class="dropdown short-input" id="country-of-residence">
+                    <option value=""></option>
+                    <option value="vietnam">Việt Nam</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="honorifics">Chủ sở hữu hưởng lợi</label>
+                  <select name="honorifics" class="dropdown short-input" id="honorifics">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class = "col c-6">
+                <div class="form-group">
+                    <div><label for="customer-code" class="form-label required">mã khách hàng</label></div>
+                    <input class = "short-input" id="customer-code" name="customer-code" type="text" placeholder="" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+              </div>
+            </div>
+            <div class = "row no-gutters">
+              <div class = "col c-6">
+                <div class="form-group">
+                  <label class="form-label required" for="security-question">Câu hỏi bảo mật</label>
+                  <select name="security-question" class="dropdown short-input" id="security-question">
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class = "col c-6">
+                <div class="form-group">
+                    <div><label for="security-answer" class="form-label required">Câu trả lời</label></div>
+                    <input class = "short-input" id="security-answer" name="security-answer" type="text" placeholder="" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+  
+          </div>
+        </div>
+        
+        </form>
+      
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

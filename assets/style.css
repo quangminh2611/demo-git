@@ -1,0 +1,128 @@
+
+:root {
+  --heading-color: #b5b5b5;
+  --background-item-color: #f4f4f4;
+  --title-color: #656864;
+  --text-color: #282828;
+  --placeholder-color: #d2d2d2;
+  --white-color: #fff;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item{
+  margin-top: 16px;
+  min-height: 650px;
+  background-color: var(--background-item-color);
+}
+
+.heading {
+  font-size: 24px;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  padding-left: 2rem;
+  padding-top: 0.8rem;
+}
+
+.heading:after {
+  content:"";
+  display: block;
+  width: 97%;
+  border-bottom: 1px solid var(--heading-color);
+  padding: 0.25em auto;
+}
+
+.form-group {
+  position: relative;
+  width: 90%; 
+}
+
+.long-input {
+ border: none;
+ width: 101.1%;
+}
+
+.short-input {
+  border: none;
+  width: 100%;
+  height: 2rem;
+  padding: 18px 0 0 0;
+  font-weight: bold;
+ color: var(--text-color);
+}
+
+.form-label {
+  position: absolute;
+  font-size: .9em;
+  top: 5px;
+  left: 5px;
+  color: var(--title-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input {
+  display: inline-block;
+ background-color: transparent;
+ height: 2rem;
+ top: 0;
+ left: 0;
+ font-size: 1rem;
+ padding: 18px 5px 0 5px;
+ font-weight: bold;
+ color: var(--text-color);
+ background-color: var(--white-color);
+}
+
+input::placeholder {
+  color: var(--placeholder---TE);
+  font-size: .7em;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--placeholder-color)
+}
+
+.dropdown {
+display: inline-block;
+background-color: transparent;
+  height: 3.14rem;
+  font-size: 1rem;
+  padding: 18px 5px 0 5px;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  }
+
+.disabled {
+  background-color: #b5b5b5;
+  pointer-events: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.input-area {
+  margin-left: 2rem;
+}
+
+select {
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('/assets/select.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.required::after{
+  content: ' *';
+  color: red
+}
